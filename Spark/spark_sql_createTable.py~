@@ -1,0 +1,9 @@
+from pyspark import SparkContext, SparkConf
+from pyspark.sql import HiveContext, Row
+from pyspark.sql import SQLContext, Row
+
+conf  = SparkConf().setMaster("local").setAppName("My APP")
+sc =  SparkContext(conf=conf)
+
+hiveCtx =  HiveContext(sc)
+

@@ -1,0 +1,3 @@
+mysql> use db_name;
+
+mysql> SET autocommit=0 ; source the_sql_file.sql ; COMMIT ;

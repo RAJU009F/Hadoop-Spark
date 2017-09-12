@@ -1,0 +1,1 @@
+flume-ng agent -n a1 -c /home/hduser/RAJ/Flume -f flume_test.conf

@@ -1,0 +1,17 @@
+from pyspark import SparkContext, SparkConf
+from pyspark.sql import SQLContext
+
+import numpy as np
+import scipy.sparse as sps
+from pyspark.mllib.linalg import Vectors
+from pyspark.mllib.linalg import SparseVector
+from pyspark.mllib.regression import LabeledPoint
+from pyspark.sql import SparkSession
+
+from pyspark.mllib.linalg.distributed import RowMatrix
+from pyspark.mllib.linalg.distributed import IndexedRow, IndexedRowMatrix
+from pyspark.mllib.linalg.distributed import CoordinateMatrix, MatrixEntry
+
+conf =  SparkConf().setMaster("local").setAppName("MyAPP")
+sc = SparkContext(conf=conf)
+

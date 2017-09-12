@@ -1,0 +1,14 @@
+from pyspark import SparkContext, SparkConf
+import random
+from pyspark.sql import SQLContext, Row
+conf  = SparkConf().setMaster("local").setAppName("My APP")
+sc =  SparkContext(conf=conf)
+
+
+textFileRDD= sc.textFile("/p01/sample_data/text_data.txt")
+df = textFileRDD.map(lambda r : Row(r)).SQLContext().toDF(["line"])
+errors = df.filter(col("line").like("%ERROR%"))
+errors.count()
+errors.filter(col("line").like("%MySQL%")).count()
+errors.filter(col("line").like("%MySQL%")).collect()
+

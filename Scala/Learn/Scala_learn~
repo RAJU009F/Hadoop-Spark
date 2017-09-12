@@ -1,0 +1,50 @@
+scala> println("Hello  world")
+Hello  world
+
+scala> 1+2
+res1: Int = 3
+
+scala> 2/3.0
+res2: Double = 0.6666666666666666
+
+scala> res0
+
+scala> res1
+res4: Int = 3
+
+scala> 
+
+
+==============
+sample Task
+===================
+
+scala> val  rand: Double =  math.random*100
+rand: Double = 21.42044040651909
+
+scala> val greaterThanFive = { 
+     | if (rand>5) true else false
+     | }
+greaterThanFive: Boolean = true
+
+scala> greaterThanFive
+res11: Boolean = true
+
+scala> val  isBlue = {
+     | if(greaterThanFive) "Blue" else "Red"
+     | }
+isBlue: String = Blue
+
+
+==================================================
+
+
+===========
+Object ORiented Concepts of Sclala
+============
+
+
+
+
+
+
