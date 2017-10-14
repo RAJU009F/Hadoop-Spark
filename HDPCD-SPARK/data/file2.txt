@@ -1,0 +1,2 @@
+hadoopExam4B.txt
+Hadoop Spark Scala Python Java Cloud Science 
